@@ -1,5 +1,7 @@
 const a = 1
 
+declare global {}
+
 const obj = {
   'a': 3,
   'b': 0,
