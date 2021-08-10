@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yyl-vue",
-  "version": "0.2.8",
+  "version": "1.0.0",
   "description": "eslint plugins for yyl vue project",
   "main": "index.js",
   "repository": "https://github.com/ZhihaoLau/eslint-config-yyl-vue.git",
@@ -8,8 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "eslint": "eslint --config ./.eslintrc.json --ext=js,vue ./test/base/src",
-    "prettier": "prettier --write ./test/base/src/**/*.{js,vue}",
+    "eslint": "eslint --config ./.eslintrc.json --ext=js,vue,ts,tsx ./test/base/src",
+    "eslint:fix": "eslint --fix --config ./.eslintrc.json --ext=js,vue,ts,tsx ./test/base/src",
+    "prettier": "prettier --write ./test/base/src/**/*.{js,vue,ts,tsx}",
     "test": "npm run eslint && npm run prettier && npm run eslint",
     "commit": "git add . && git-cz",
     "release": "standard-version",
@@ -35,17 +36,23 @@
     "prettier": "^2.0.4"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^5.0.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-vue": "^5.2.2"
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.16.0"
   },
   "devDependencies": {
-    "git-cz": "^4.3.1",
     "eslint": ">=6.6.0",
+    "git-cz": "^4.3.1",
     "prettier": "^2.0.4",
-    "standard-version": "^7.1.0"
+    "standard-version": "^7.1.0",
+    "typescript": "^4.3.5"
   }
 }
