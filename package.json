@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yyl-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "eslint plugins for yyl vue project",
   "main": "index.js",
   "repository": "https://github.com/ZhihaoLau/eslint-config-yyl-vue.git",
